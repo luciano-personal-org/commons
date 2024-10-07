@@ -29,6 +29,6 @@ func listFilesByPatternAndCreationTime(directoryPath, searchPattern string) ([]o
 		return matchingFiles[i].ModTime().After(matchingFiles[j].ModTime())
 	})
 
-	// Return the matching files - vai porra
+	// Return the matching files - vai porra!
 	return matchingFiles, nil
 }
