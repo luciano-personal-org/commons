@@ -7,6 +7,8 @@ import (
 	"strings"
 )
 
+// FIXME: it is not being recognized by the compiler
+
 // List files by pattern and creation time
 func listFilesByPatternAndCreationTime(directoryPath, searchPattern string) ([]os.FileInfo, error) {
 
