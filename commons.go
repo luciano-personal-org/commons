@@ -4,6 +4,7 @@ import (
 	"io/ioutil"
 	"os"
 	"sort"
+	"strconv"
 	"strings"
 )
 
@@ -31,4 +32,9 @@ func listFilesByPatternAndCreationTime(directoryPath, searchPattern string) ([]o
 
 	// Return the matching files - vai porra!
 	return matchingFiles, nil
+}
+
+func parseFloat(value string) float64 {
+	parsedValue, _ := strconv.ParseFloat(value, 64)
+	return parsedValue
 }
